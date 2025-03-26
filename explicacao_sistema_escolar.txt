@@ -1,0 +1,52 @@
+Explicação do código:
+
+Classe Aluno:
+
+constructor(nome, matricula, notas, curso): Inicializa um novo aluno com nome, matrícula, um array vazio para notas e o curso.
+adicionarNota(nota): Adiciona uma nota ao array de notas do aluno.
+calcularMedia(): Calcula a média das notas do aluno. Se não houver notas, retorna 0.
+exibirInformacoes(): Exibe as informações do aluno no console.
+Classe Professor:
+
+constructor(nome, departamento): Inicializa um novo professor com nome e departamento.
+atribuirDisciplina(disciplina): Adiciona uma disciplina à lista de disciplinas do professor.
+listarTurmas(): Lista as disciplinas (turmas) que o professor está lecionando.
+exibirInformacoes(): Exibe as informações do professor no console.
+Classe Disciplina:
+
+constructor(nome, codigo): Inicializa uma nova disciplina com nome e código.
+matricularAluno(aluno): Adiciona um aluno à lista de alunos matriculados na disciplina.
+gerarBoletim(): Exibe o boletim da disciplina, mostrando o nome, matrícula e média de cada aluno matriculado.
+exibirInformacoes(): Exibe as informações da disciplina no console.
+Classe Escola:
+
+constructor(nome): Inicializa uma nova escola com um nome e listas vazias para alunos, professores e disciplinas.
+matricularAluno(aluno): Adiciona um aluno à lista de alunos da escola.
+contratarProfessor(professor): Adiciona um professor à lista de professores da escola.
+adicionarDisciplina(disciplina): Adiciona uma disciplina à lista de disciplinas da escola.
+buscarAlunoPorMatricula(matricula): Busca um aluno na lista pelo número de matrícula.
+buscarProfessorPorNome(nome): Busca um professor na lista pelo nome.
+buscarDisciplinaPorCodigo(codigo): Busca uma disciplina na lista pelo código.
+gerarRelatorio(): Gera um relatório geral da escola, mostrando o total de alunos, professores, disciplinas e a lista de cada um.
+Criação de Instâncias:
+
+São criadas instâncias de cada classe para popular o sistema com alguns dados iniciais.
+Interações entre as Classes:
+
+Professores são atribuídos a disciplinas.
+Alunos são matriculados em disciplinas.
+Notas são adicionadas aos alunos.
+Menu Básico no Console:
+
+A função exibirMenu() mostra as opções disponíveis para o usuário.
+A função executarAcao(opcao) executa a ação correspondente à opção escolhida pelo usuário.
+O menu utiliza prompt() para receber a entrada do usuário e console.log() para exibir as informações.
+O loop while mantém o menu em execução até que o usuário escolha a opção "Sair".
+Como executar o código:
+
+Salve o código em um arquivo com a extensão .js (por exemplo, sistema_escolar.js).
+Abra o terminal ou prompt de comando.
+Navegue até o diretório onde você salvou o arquivo.
+Execute o comando: node sistema_escolar.js
+O menu do sistema será exibido no console, e você poderá interagir com ele digitando as opções numéricas.
+Este código fornece uma base para um sistema escolar utilizando os conceitos de Programação Orientada a Objetos em JavaScript. Você pode expandir e adicionar mais funcionalidades conforme necessário.
